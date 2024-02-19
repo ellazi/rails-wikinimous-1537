@@ -1,15 +1,92 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:wght@100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  padding: 2px 10px;
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: rgba(251, 255, 130, 0.805);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.article-card {
+  margin: 50px 0;
+}
+
+.article-card p {
+  padding: 0 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  gap: 10px;
+}
+
+/* styling form */
+
+.btn {
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  align-content: center;
+}
+
+label {
+  width: 20%;
+}
+
+input, .textarea {
+  width: calc(80% - 20px);
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,13 @@
+<%= form_with model: article do |f| %>
+  <div class="form-line">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form-line">
+    <%= f.label :content %>
+    <%= f.text_area :content, class: "textarea" %>
+  </div>
+  <div class="submit">
+    <%= f.submit class: "btn" %>
+  </div>
+<% end %>

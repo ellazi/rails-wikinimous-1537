@@ -1,0 +1,7 @@
+<h1>Edit <%= @article.title %></h1>
+<div class="menu">
+  <%= link_to "Back to all articles", root_path %>
+  <%= link_to "Back", article_path(@article) %>
+</div>
+
+<%= render "form", article: @article %>
